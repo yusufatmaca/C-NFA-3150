@@ -28,9 +28,6 @@ typedef struct {
     Transition* transitions; // Dynamic array of transitions
 } FiniteAutomaton;
 
-// Function to initialize the dynamic array of transitions
-void initTransitions(FiniteAutomaton* automaton);
-
 // Function to free the dynamic array of transitions
 void freeTransitions(FiniteAutomaton* automaton);
 

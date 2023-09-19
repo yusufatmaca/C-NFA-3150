@@ -40,11 +40,6 @@ int main(int argc, char **argv)
     return 0;
 }
 
-// Function to free the dynamic array of transitions
-void freeTransitions(FiniteAutomaton* automaton) {
-    free(automaton->transitions);
-}
-
 // Function to parse the input format and fill the FiniteAutomaton struct
 int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
     char str[MAX_STRING_LEN];
@@ -116,6 +111,11 @@ int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
 
     // Return 1 on success
     return 1; 
+}
+
+// Function to free the dynamic array of transitions
+void freeTransitions(FiniteAutomaton* automaton) {
+    free(automaton->transitions);
 }
 
 // Function to free dynamically allocated memory in the automaton struct
