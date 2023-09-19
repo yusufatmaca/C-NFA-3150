@@ -8,7 +8,7 @@
 #define MAX_STRING_LEN     11    // Maximum state name length + 1 for null-terminator
 
 // Define a struct for a single transition
-typedef struct Transition {
+typedef struct {
     char from_state[MAX_STRING_LEN];
     char input_symbol;
     char to_state[MAX_STRING_LEN];
