@@ -238,9 +238,12 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 {
     int num_transitions = automaton->number_of_transitions;
 
+    // Iterate through all transitions to find epsilon transitions
     for (int i = 0; i < num_transitions; i++)
     {
         Transition *epsilon_transition = &(automaton->transitions[i]);
+
+        // Check if the current transition matches the passed state, and check if the transition is also an epsilon transition
         if (strcmp(epsilon_transition->from_state, state) == 0 && strcmp(epsilon_transition->input_string, "e") == 0)
         {
             for (int j = 0; j < automaton->number_of_states; j++)
