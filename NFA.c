@@ -223,7 +223,7 @@ void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_s
 
                             char *state = automaton->state_list[k];
 
-                            // If the next active state has an epsilon transition, we handle it here
+                            // If the state we set to active has an epsilon transition, we handle it here
                             handleEpsilon(automaton, state, next_active_states);
                         }
                     }
