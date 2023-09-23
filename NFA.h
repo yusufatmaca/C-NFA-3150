@@ -10,7 +10,7 @@
 // Define a struct for a single transition
 typedef struct {
     char from_state[MAX_STRING_LEN];
-    char input_symbol;
+    char input_string[MAX_STRING_LEN];
     char to_state[MAX_STRING_LEN];
 } Transition;
 
@@ -33,6 +33,15 @@ void freeTransitions(FiniteAutomaton* automaton);
 
 // Function to parse the input format and fill the FiniteAutomaton struct
 int parseAutomaton(FILE* input, FiniteAutomaton* automaton);
+
+// Function to traverse the input string and return 0 or 1 depending on whether there is a final accept state active
+int traverseAutomaton(FiniteAutomaton* automaton);
+
+// Function to determine array of next states
+void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_states)[automaton->number_of_states], int (*next_active_states)[automaton->number_of_states]);
+
+// Function to handle epsilon transitions
+void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_states)[automaton->number_of_states]);
 
 // Function to free dynamically allocated memory in the automaton struct
 void freeAutomaton(FiniteAutomaton* automaton);
