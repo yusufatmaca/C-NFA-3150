@@ -125,6 +125,7 @@ int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
             automaton->transitions[i].to_state) != 3) return 0;
         printf("\t(%s, %s, %s)\n", automaton->transitions[i].from_state, automaton->transitions[i].input_string, automaton->transitions[i].to_state);
     }
+    printf("\n");
 
     // Return 1 on success
     return 1; 
@@ -207,15 +208,19 @@ void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_s
         // Iterate through the active state list
         for (int j = 0; j < automaton->number_of_states; j++)
         {
+
             // Make sure the current state is active, else we go to the next one
             if ((*active_states)[j] == 1)
             {
+
                 // Check if the current transition "from_state" matches the current state we are on, and check if the input string matches the required transition input string
                 if (strcmp(transition->from_state, automaton->state_list[j]) == 0 && strcmp(transition->input_string, input) == 0)
                 {
+
                     // We have to iterate through the state name list again to find the index of the next state
                     for (int k = 0; k < automaton->number_of_states; k++)
                     {
+
                         // Set the next state to active based on the string in the to_state field of the transition
                         if (strcmp(transition->to_state, automaton->state_list[k]) == 0)
                         {
@@ -243,9 +248,11 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
     {
         Transition *epsilon_transition = &(automaton->transitions[i]);
 
-        // Check if the current transition matches the passed state, and check if the transition is also an epsilon transition
-        if (strcmp(epsilon_transition->from_state, state) == 0 && strcmp(epsilon_transition->input_string, "e") == 0)
+        // Check if the transition is an "e" epsilon transition, and check if the transition "from state" matches the passed "state" string
+        if (strcmp(epsilon_transition->input_string, "e") == 0 && strcmp(epsilon_transition->from_state, state) == 0)
         {
+
+            // Iterate through the state list to find the index of the next state
             for (int j = 0; j < automaton->number_of_states; j++)
             {
                 if (strcmp(epsilon_transition->to_state, automaton->state_list[j]) == 0)
