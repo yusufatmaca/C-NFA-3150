@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     // Initialize a FiniteAutomaton struct
     FiniteAutomaton automaton;
 
-    // Open the input file (change "input.txt" to your input file name)
+    // Open the input file
     FILE* input = fopen(argv[1], "r");
     if (input == NULL) {
         perror("Failed to open input file");
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     // Parse the input format
     if (!parseAutomaton(input, &automaton)) {
         printf("Error: Failed to parse the input format.\n");
-        // Close the input file
+        // Close the input file in event of error
         fclose(input);
         return 1;
     }
@@ -31,10 +31,7 @@ int main(int argc, char **argv)
     // Close the input file
     fclose(input);
 
-    // Now, the automaton struct is filled with the parsed values
-    // You can use the automaton struct in your program as needed
-
-    // Don't forget to free the dynamically allocated memory when you're done
+    // Free all dynamically allocated memory in the automaton struct
     freeAutomaton(&automaton);
 
     return 0;
