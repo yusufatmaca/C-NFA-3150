@@ -1,10 +1,18 @@
+/*
+Name: Kyle Lukaszek
+Student ID: 1113798
+Class: CIS*3150
+Assignment 1
+Due Date: September 29 2023
+*/
+
 #include "NFA.h"
 
 // Main Program Loop
 int main(int argc, char **argv)
 {
     // Ensure that all arguments are present
-    if (argc < 2) 
+    if (argc < 2)
     {
         printf("Usage: ./a1 NFA_FILENAME\n");
         exit(-1);
@@ -14,15 +22,18 @@ int main(int argc, char **argv)
     FiniteAutomaton automaton;
 
     // Open the input file
-    FILE* input = fopen(argv[1], "r");
-    if (input == NULL) {
+    FILE *input = fopen(argv[1], "r");
+    if (input == NULL)
+    {
         perror("Failed to open input file");
         return 1;
     }
 
     // Parse the input format
-    if (!parseAutomaton(input, &automaton)) {
+    if (!parseAutomaton(input, &automaton))
+    {
         printf("Error: Failed to parse the input format.\n");
+        freeAutomaton(&automaton);
         // Close the input file in event of error
         fclose(input);
         return 1;
@@ -45,7 +56,7 @@ int main(int argc, char **argv)
     {
         printf("Error: Failed to traverse the automaton.\n");
 
-        // Free all dynamically allocated memory in the automaton struct
+        // Free all dynamically allocated memory in the automaton struct on error
         freeAutomaton(&automaton);
 
         return 1;
@@ -58,27 +69,65 @@ int main(int argc, char **argv)
 }
 
 // Function to parse the input format and fill the FiniteAutomaton struct
-int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
+int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
+{
+    // Initialize a temporary string to read into
     char str[MAX_STRING_LEN];
 
-    // Read alphabet size and alphabet list
+    // Initialize the automaton struct defaults
+    automaton->alphabet_size = 0;
+    automaton->num_states = 0;
+    automaton->m_state_alloc = 0;
+    automaton->starting_state = NULL;
+    automaton->accept_state = NULL;
+    automaton->num_inputs = 0;
+    automaton->m_input_alloc = 0;
+    automaton->number_of_transitions = 0;
+    automaton->transitions = NULL;
+
+    // Read alphabet size
     if (fscanf(input, "%d", &(automaton->alphabet_size)) != 1) return 0;
     printf("Alphabet size: %d\n", automaton->alphabet_size);
+
+    // Read alphabet into character array
     printf("Alphabet: ");
-    for (int i = 0; i < automaton->alphabet_size; i++) {
-        if (fscanf(input, "%s", str) != 1) return 0;
-        automaton->alphabet_list[i] = strdup(str);
-        printf("%s ", automaton->alphabet_list[i]);
+    for (int i = 0; i < automaton->alphabet_size; i++)
+    {
+        if (fscanf(input, "%s", &(automaton->alphabet_list[i])) != 1) return 0;
+        printf("%c ", automaton->alphabet_list[i]);
     }
+    // Add null terminator to the end of the alphabet list
+    automaton->alphabet_list[automaton->alphabet_size + 1] = '\0';
     printf("\n");
 
-    // Read number of states and state list
-    if (fscanf(input, "%d", &(automaton->number_of_states)) != 1) return 0;
-    printf("Number of states: %d\n", automaton->number_of_states);
+    // Read number of states
+    if (fscanf(input, "%d", &(automaton->num_states)) != 1) return 0;
+    printf("Number of states: %d\n", automaton->num_states);
+
+    // Initialize state list to NULL
+    for (int i = 0; i < automaton->num_states; i++)
+    {
+        automaton->state_list[i] = NULL;
+    }
+
+    // Read states into state list
     printf("States: ");
-    for (int i = 0; i < automaton->number_of_states; i++) {
+    for (int i = 0; i < automaton->num_states; i++)
+    {
         if (fscanf(input, "%s", str) != 1) return 0;
+
+        // Make sure state name is 10 characters or less as per assignment requirements
+        if (strlen(str) > 10)
+        {
+            printf("Error: State name \"%s\" is too long.\n", str);
+            return 0;
+        }
+
+        str[strlen(str)] = '\0';
+
+        // Duplicate the state name and add it to the state list
         automaton->state_list[i] = strdup(str);
+
         printf("%s ", automaton->state_list[i]);
     }
     printf("\n");
@@ -88,19 +137,94 @@ int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
     automaton->starting_state = strdup(str);
     printf("Starting state: %s\n", automaton->starting_state);
 
+    // Check if starting state is in the state list
+    int starting_state_found = 0;
+    for (int i = 0; i < automaton->num_states; i++)
+    {
+        if (strcmp(automaton->starting_state, automaton->state_list[i]) == 0)
+        {
+            starting_state_found = 1;
+            break;
+        }
+    }
+
+    // Print error if starting state is not in the state list
+    if (!starting_state_found)
+    {
+        printf("Error: Starting state \"%s\" is not in the state list.\n", automaton->starting_state);
+        return 0;
+    }
+
     // Read accept state
     if (fscanf(input, "%s", str) != 1) return 0;
     automaton->accept_state = strdup(str);
     printf("Accept state: %s\n", automaton->accept_state);
-    
-    // Read number of inputs and input strings
+
+    // Check if accept state is in the state list
+    int accept_state_found = 0;
+    for (int i = 0; i < automaton->num_states; i++)
+    {
+        if (strcmp(automaton->accept_state, automaton->state_list[i]) == 0)
+        {
+            accept_state_found = 1;
+            break;
+        }
+    }
+
+    // Print error if accept state is not in the state list
+    if (!accept_state_found)
+    {
+        printf("Error: Accept state \"%s\" is not in the state list.\n", automaton->accept_state);
+        return 0;
+    }
+
+    // Read number of inputs
     if (fscanf(input, "%d", &(automaton->num_inputs)) != 1) return 0;
     printf("Num inputs: %d\n", automaton->num_inputs);
+
+    // Make sure number of inputs is less than or equal to MAX_INPUTS
+    if (automaton->num_inputs > MAX_INPUTS)
+    {
+        printf("Error: Number of inputs exceeds maximum of %d.\n", MAX_INPUTS);
+        return 0;
+    }
+
+    // Initialize input strings to NULL
+    for (int i = 0; i < automaton->num_inputs; i++)
+    {
+        automaton->input_strings[i] = NULL;
+    }
+
+    // Read input strings into input strings array
     printf("Inputs: ");
-    for (int i = 0; i < automaton->num_inputs; i++) {
+    for (int i = 0; i < automaton->num_inputs; i++)
+    {
         if (fscanf(input, "%s", str) != 1) return 0;
-        automaton->input_string[i] = strdup(str);
-        printf("%s ", automaton->input_string[i]);
+
+        // Make sure input string only contains characters in the alphabet
+        for (char *c = str; *c != '\0'; c++)
+        {
+            if (!strchr(automaton->alphabet_list, *c))
+            {
+                printf("\nError: Input name \"%s\" contains a character not in the alphabet.\n", str);
+                return 0;
+            }
+        }
+
+        // Make sure input string is 10 characters or less as per assignment requirements
+        if (strlen(str) > 10)
+        {
+            printf("Error: Input string \"%s\" is too long.\n", str);
+            return 0;
+        }
+
+        // Add null terminator to the end of the input string
+        str[strlen(str)] = '\0';
+
+        // Duplicate the input string and add it to the input strings array
+        automaton->input_strings[i] = strdup(str);
+
+        printf("%s ", automaton->input_strings[i]);
     }
     printf("\n");
 
@@ -110,43 +234,144 @@ int parseAutomaton(FILE* input, FiniteAutomaton* automaton) {
 
     // Initialize transitions array structs
     automaton->transitions = malloc(automaton->number_of_transitions * sizeof(Transition));
-    if (automaton->transitions == NULL) {
+    if (automaton->transitions == NULL)
+    {
         perror("Failed to allocate memory for transitions");
         return 0;
     }
 
-    // Read transitions
-    printf("Transitions:\n");
-    for (int i = 0; i < automaton->number_of_transitions; i++) {
-        // Read from state, input symbol, and to state
-        if (fscanf(input, "%s %s %s",
-            automaton->transitions[i].from_state,
-            automaton->transitions[i].input_string,
-            automaton->transitions[i].to_state) != 3) return 0;
-        printf("\t(%s, %s, %s)\n", automaton->transitions[i].from_state, automaton->transitions[i].input_string, automaton->transitions[i].to_state);
+    int result = parseTransitions(input, automaton);
+
+    if (!result)
+    {
+        printf("Error: Failed to parse transitions.\n");
+        return 0;
     }
+
     printf("\n");
 
     // Return 1 on success
-    return 1; 
+    return 1;
+}
+
+// Parse transition from input format and fill the Transition struct in the FiniteAutomaton struct
+// This function is called from parseAutomaton()
+int parseTransitions(FILE* input, FiniteAutomaton* automaton)
+{
+    // Read transitions
+    printf("Transitions:\n");
+    for (int i = 0; i < automaton->number_of_transitions; i++)
+    {
+
+        char from_state[MAX_STRING_LEN];
+        char input_string[MAX_STRING_LEN];
+        char to_state[MAX_STRING_LEN];
+
+        // Read from state, input symbol, and to state
+        if (fscanf(input, "%s %s %s", from_state, input_string, to_state) != 3)
+            return 0;
+
+        // Make sure from state, input string, and to state are 10 characters or less as per assignment requirements
+        if (strlen(from_state) > 10)
+        {
+            printf("Error: Transition %d from state \"%s\" is too long.\n", i, from_state);
+            return 0;
+        }
+
+        if (strlen(input_string) > 10)
+        {
+            printf("Error: Transition %d input string \"%s\" is too long.\n", i, input_string);
+            return 0;
+        }
+
+        if (strlen(to_state) > 10)
+        {
+            printf("Error: Transition %d to state \"%s\" is too long.\n", i, to_state);
+            return 0;
+        }
+
+        // Add null terminators to the end of the strings
+        from_state[strlen(from_state)] = '\0';
+        input_string[strlen(input_string)] = '\0';
+        to_state[strlen(to_state)] = '\0';
+
+        // Make sure from_state is in the state list
+        int from_state_found = 0;
+        for (int j = 0; j < automaton->num_states; j++)
+        {
+            if (strcmp(from_state, automaton->state_list[j]) == 0)
+            {
+                from_state_found = 1;
+            }
+        }
+
+        // Print error if from_state is not in the state list
+        if (!from_state_found)
+        {
+            printf("\nError: Transition %d (%s, %s, %s), from_state \"%s\" is not in the state list.\n", i, from_state, input_string, to_state, from_state);
+            return 0;
+        }
+
+        // Make sure to_state is in the state list
+        int to_state_found = 0;
+        for (int j = 0; j < automaton->num_states; j++)
+        {
+            if (strcmp(to_state, automaton->state_list[j]) == 0)
+            {
+                to_state_found = 1;
+            }
+        }
+        
+        // Print error if to_state is not in the state list
+        if (!to_state_found)
+        {
+            printf("\nError: Transition %d (%s, %s, %s), to_state \"%s\" is not in the state list.\n", i, from_state, input_string, to_state, to_state);
+            return 0;
+        }
+
+        // If input_string is "e", we don't need to check if it is in the alphabet
+        if (!strcmp(input_string, "e") == 0)
+        {
+            // Make sure transition input string only contains characters in the alphabet
+            for (char *c = input_string; *c != '\0'; c++)
+            {
+                // Make sure each character in the input string is in the alphabet
+                if (!strchr(automaton->alphabet_list, *c))
+                {
+                    printf("\nError: Transition %d (%s, %s, %s), input_string \"%s\" contains a character not in the alphabet.\n", i, from_state, input_string, to_state, input_string);
+                    return 0;
+                }
+            }
+        }
+
+        // Copy the strings to the transitions struct array
+        strcpy(automaton->transitions[i].from_state, from_state);
+        strcpy(automaton->transitions[i].input_string, input_string);
+        strcpy(automaton->transitions[i].to_state, to_state);
+
+        printf("\t(%s, %s, %s)\n", automaton->transitions[i].from_state, automaton->transitions[i].input_string, automaton->transitions[i].to_state);
+    }
+
+    return 1;
 }
 
 // Function to traverse the input string and return 0 or 1 depending on whether there is a final accept state active
-int traverseAutomaton(FiniteAutomaton* automaton) {
+int traverseAutomaton(FiniteAutomaton *automaton)
+{
 
     int num_inputs = automaton->num_inputs;
-    int active_states[automaton->number_of_states];
-    int next_active_states[automaton->number_of_states];
+    int active_states[automaton->num_states];
+    int next_active_states[automaton->num_states];
 
     // Initialize active states array and next active states array
-    for (int i = 0; i < automaton->number_of_states; i++)
+    for (int i = 0; i < automaton->num_states; i++)
     {
         active_states[i] = 0;
         next_active_states[i] = 0;
     }
 
     // Set the starting state to active
-    for (int i = 0; i < automaton->number_of_states; i++)
+    for (int i = 0; i < automaton->num_states; i++)
     {
         if (strcmp(automaton->state_list[i], automaton->starting_state) == 0)
         {
@@ -158,17 +383,17 @@ int traverseAutomaton(FiniteAutomaton* automaton) {
     // Iterate through each input string
     for (int i = 0; i < num_inputs; i++)
     {
-        char* input = automaton->input_string[i];
+        char *input = automaton->input_strings[i];
 
-        /* 
+        /*
         Iterate through the transitions and keep track of active states in the active_states array
         by copying the results of the next_active_states array to the active_states array after each iteration
         */
 
         determineNextStates(automaton, input, &active_states, &next_active_states);
-    
+
         // Copy the next_active_states array to the active_states array
-        for (int i = 0; i < automaton->number_of_states; i++)
+        for (int i = 0; i < automaton->num_states; i++)
         {
             active_states[i] = next_active_states[i];
             next_active_states[i] = 0;
@@ -176,8 +401,8 @@ int traverseAutomaton(FiniteAutomaton* automaton) {
 
         // Print the input string
         printf("%s  ", input);
-        
-        for (int i = 0; i < automaton->number_of_states; i++)
+
+        for (int i = 0; i < automaton->num_states; i++)
         {
             printf("%d ", active_states[i]);
         }
@@ -185,7 +410,7 @@ int traverseAutomaton(FiniteAutomaton* automaton) {
     }
 
     // Check if the accept state is active, return 1 if it is
-    for (int i = 0; i < automaton->number_of_states; i++)
+    for (int i = 0; i < automaton->num_states; i++)
     {
         if (strcmp(automaton->state_list[i], automaton->accept_state) == 0 && active_states[i] == 1)
         {
@@ -198,15 +423,15 @@ int traverseAutomaton(FiniteAutomaton* automaton) {
 }
 
 // Function to determine array of next states
-void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_states)[automaton->number_of_states], int (*next_active_states)[automaton->number_of_states])
+void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_states)[automaton->num_states], int (*next_active_states)[automaton->num_states])
 {
     // Iterate through each transition to update the next_active_states array
     for (int i = 0; i < automaton->number_of_transitions; i++)
     {
-        Transition* transition = &(automaton->transitions[i]);
+        Transition *transition = &(automaton->transitions[i]);
 
         // Iterate through the active state list
-        for (int j = 0; j < automaton->number_of_states; j++)
+        for (int j = 0; j < automaton->num_states; j++)
         {
 
             // Make sure the current state is active, else we go to the next one
@@ -218,7 +443,7 @@ void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_s
                 {
 
                     // We have to iterate through the state name list again to find the index of the next state
-                    for (int k = 0; k < automaton->number_of_states; k++)
+                    for (int k = 0; k < automaton->num_states; k++)
                     {
 
                         // Set the next state to active based on the string in the to_state field of the transition
@@ -239,7 +464,7 @@ void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_s
 }
 
 // Function to handle epsilon transitions
-void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_states)[automaton->number_of_states])
+void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_states)[automaton->num_states])
 {
     int num_transitions = automaton->number_of_transitions;
 
@@ -253,7 +478,7 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
         {
 
             // Iterate through the state list to find the index of the next state
-            for (int j = 0; j < automaton->number_of_states; j++)
+            for (int j = 0; j < automaton->num_states; j++)
             {
                 if (strcmp(epsilon_transition->to_state, automaton->state_list[j]) == 0)
                 {
@@ -265,34 +490,30 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
     }
 }
 
-// Function to free the dynamic array of transitions
-void freeTransitions(FiniteAutomaton* automaton) {
-    free(automaton->transitions);
-}
-
 // Function to free dynamically allocated memory in the automaton struct
-void freeAutomaton(FiniteAutomaton* automaton) {
-    // Free alphabet
-    for (int i =0; i < automaton->alphabet_size; i++) {
-        free(automaton->alphabet_list[i]);
-    }
-
+void freeAutomaton(FiniteAutomaton *automaton)
+{
     // Free states
-    for (int i = 0; i < automaton->number_of_states; i++) {
-        free(automaton->state_list[i]);
+    for (int i = 0; i < automaton->num_states; i++)
+    {
+        if (automaton->state_list[i] != NULL)
+            free(automaton->state_list[i]);
     }
 
     // Free input strings
-    for (int i = 0; i < automaton->num_inputs; i++) {
-        free(automaton->input_string[i]);
+    for (int i = 0; i < automaton->num_inputs; i++)
+    {
+        if (automaton->input_strings[i] != NULL)
+            free(automaton->input_strings[i]);
     }
 
     // Free starting and accept states
-    free(automaton->starting_state);
-    free(automaton->accept_state);
+    if (automaton->starting_state != NULL)
+        free(automaton->starting_state);
+    if (automaton->accept_state != NULL)
+        free(automaton->accept_state);
 
-    // Free transitions array
-    freeTransitions(automaton);
+    // Free transitions dynamic array
+    if (automaton->transitions != NULL)
+        free(automaton->transitions);
 }
-
-
