@@ -435,7 +435,6 @@ int parseTransitions(FILE* input, FiniteAutomaton* automaton)
 // Function to traverse the input string and return 0 or 1 depending on whether there is a final accept state active
 int traverseAutomaton(FiniteAutomaton *automaton)
 {
-
     int num_inputs = automaton->num_inputs;
     int active_states[automaton->num_states];
     int next_active_states[automaton->num_states];
@@ -450,9 +449,14 @@ int traverseAutomaton(FiniteAutomaton *automaton)
     // Set the starting state to active
     for (int i = 0; i < automaton->num_states; i++)
     {
-        if (strcmp(automaton->state_list[i], automaton->starting_state) == 0)
+        char *state = automaton->state_list[i];
+        if (strcmp(state, automaton->starting_state) == 0)
         {
             active_states[i] = 1;
+            
+            // If the starting state has an epsilon transition, we handle it here
+            // This exists to handle the sample input case 1. from Courselink
+            handleEpsilon(automaton, state, &active_states);
             break;
         }
     }
@@ -570,7 +574,6 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 // Function to free dynamically allocated memory in the automaton struct
 void freeAutomaton(FiniteAutomaton *automaton)
 {
-
     // Free alphabet
     for (int i = 0; i < automaton->alphabet_size; i++)
     {
@@ -603,7 +606,7 @@ void freeAutomaton(FiniteAutomaton *automaton)
         free(automaton->transitions);
 }
 
-// Helper function to determine if pointer exist in array
+// Helper function to determine if pointer exist in array, return true or false
 int pointerInArray(char **array, char *pointer, int size)
 {
     for (int i = 0; i < size; i++)

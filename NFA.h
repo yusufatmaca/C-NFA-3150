@@ -54,5 +54,5 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 // Function to free dynamically allocated memory in the automaton struct
 void freeAutomaton(FiniteAutomaton* automaton);
 
-// Helper function to determine if pointer exist in array
+// Helper function to determine if pointer exist in array, return true or false
 int pointerInArray(char **array, char *pointer, int size);

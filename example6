@@ -1,0 +1,10 @@
+26 a b c d E f g h i j k l m n o p q r s t u v w x y z
+3 state1 state2 state3
+state1
+state3
+3 cat cat bird
+4
+state1 cat state2
+state2 bird state3
+state1 bird state1
+state2 cat state2
