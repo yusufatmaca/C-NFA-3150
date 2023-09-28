@@ -10,7 +10,7 @@ Due Date: September 29 2023
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_ALPHABET_SIZE  101   // Maximum number of characters in the alphabet + 1 for null-terminator
+#define MAX_ALPHABET_SIZE  100   // Maximum number of characters in the alphabet + 1 for null-terminator
 #define MAX_STATES         100
 #define MAX_INPUTS         100   // Maximum number of input strings
 #define MAX_STRING_LEN     11    // Maximum state name length + 1 for null-terminator
@@ -25,14 +25,12 @@ typedef struct {
 // Define a struct to represent the finite automaton
 typedef struct {
     int alphabet_size;
-    char alphabet_list[MAX_ALPHABET_SIZE]; // There will not be more than 100 strings (characters) in the alphabet
+    char* alphabet_list[MAX_ALPHABET_SIZE];
     int num_states;
-    int m_state_alloc; // Track the number of allocated state strings
     char* state_list[MAX_STATES];
     char* starting_state;
     char* accept_state;
     int num_inputs;
-    int m_input_alloc; // Track the number of allocated input strings
     char* input_strings[MAX_INPUTS]; // Up to 100 input strings
     int number_of_transitions;
     Transition* transitions; // Dynamic array of transitions
@@ -55,3 +53,6 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 
 // Function to free dynamically allocated memory in the automaton struct
 void freeAutomaton(FiniteAutomaton* automaton);
+
+// Helper function to determine if pointer exist in array
+int pointerInArray(char **array, char *pointer, int size);

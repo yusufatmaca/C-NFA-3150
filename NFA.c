@@ -77,11 +77,9 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     // Initialize the automaton struct defaults
     automaton->alphabet_size = 0;
     automaton->num_states = 0;
-    automaton->m_state_alloc = 0;
     automaton->starting_state = NULL;
     automaton->accept_state = NULL;
     automaton->num_inputs = 0;
-    automaton->m_input_alloc = 0;
     automaton->number_of_transitions = 0;
     automaton->transitions = NULL;
 
@@ -89,12 +87,32 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     if (fscanf(input, "%d", &(automaton->alphabet_size)) != 1) return 0;
     printf("Alphabet size: %d\n", automaton->alphabet_size);
 
+    // Initialize alphabet list to NULL
+    for (int i = 0; i < automaton->alphabet_size; i++)
+    {
+        automaton->alphabet_list[i] = NULL;
+    }
+
     // Read alphabet into character array
     printf("Alphabet: ");
     for (int i = 0; i < automaton->alphabet_size; i++)
     {
-        if (fscanf(input, "%s", &(automaton->alphabet_list[i])) != 1) return 0;
-        printf("%c ", automaton->alphabet_list[i]);
+        if (fscanf(input, "%s", str) != 1) return 0;
+
+        // Make sure alphabet string is 10 characters or less as per assignment requirements
+        if (strlen(str) > 10)
+        {
+            printf("Error: Alphabet string \"%s\" is too long.\n", str);
+            return 0;
+        }
+
+        // Add null terminator to the end of the string
+        str[strlen(str)] = '\0';
+
+        // Duplicate the string and add it to the alphabet list
+        automaton->alphabet_list[i] = strdup(str);
+
+        printf("%s ", automaton->alphabet_list[i]);
     }
     // Add null terminator to the end of the alphabet list
     automaton->alphabet_list[automaton->alphabet_size + 1] = '\0';
@@ -201,16 +219,6 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     {
         if (fscanf(input, "%s", str) != 1) return 0;
 
-        // Make sure input string only contains characters in the alphabet
-        for (char *c = str; *c != '\0'; c++)
-        {
-            if (!strchr(automaton->alphabet_list, *c))
-            {
-                printf("\nError: Input name \"%s\" contains a character not in the alphabet.\n", str);
-                return 0;
-            }
-        }
-
         // Make sure input string is 10 characters or less as per assignment requirements
         if (strlen(str) > 10)
         {
@@ -220,6 +228,49 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
 
         // Add null terminator to the end of the input string
         str[strlen(str)] = '\0';
+
+        // Check if input string is "e", we don't need to check if it is in the alphabet
+        if (!strcmp(str, "e") == 0)
+        {
+            // Used to count the number of characters present in the alphabet from the input string
+            int count = 0;
+
+            // Iterate through dynamic alphabet array to check if the input string is a subset of the alphabet
+            int input_string_found = 0;
+
+            // Check if the input string is in the alphabet
+            input_string_found = pointerInArray(automaton->alphabet_list, str, automaton->alphabet_size);
+
+            // If the input string is not a string in the alphabet, we check if it is a subset of characters from the alphabet
+            if (!input_string_found)
+            {
+                for (int j = 0; j < automaton->alphabet_size; j++)
+                {
+                    // Check if the current alphabet string is a single character
+                    if (strlen(automaton->alphabet_list[j]) == 1)
+                    {
+                        // Check if the current character alphabet character exists in the input string, increment count if it is
+                        if (strchr(str, automaton->alphabet_list[j][0]))
+                        {
+                            count++;
+                        }
+                    }
+                }
+
+                // If the current character index is equal to the length of the input string, we know that the input string is a subset of the alphabet
+                if (count == strlen(str))
+                {
+                    input_string_found = 1;
+                }
+            }
+
+            // Print error if input string is not in the alphabet
+            if (!input_string_found)
+            {
+                printf("Error: Input string \"%s\" is not in the alphabet.\n", str);
+                return 0;
+            }
+        }
 
         // Duplicate the input string and add it to the input strings array
         automaton->input_strings[i] = strdup(str);
@@ -236,7 +287,7 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     automaton->transitions = malloc(automaton->number_of_transitions * sizeof(Transition));
     if (automaton->transitions == NULL)
     {
-        perror("Failed to allocate memory for transitions");
+        printf("Failed to allocate memory for transitions");
         return 0;
     }
 
@@ -332,15 +383,41 @@ int parseTransitions(FILE* input, FiniteAutomaton* automaton)
         // If input_string is "e", we don't need to check if it is in the alphabet
         if (!strcmp(input_string, "e") == 0)
         {
-            // Make sure transition input string only contains characters in the alphabet
-            for (char *c = input_string; *c != '\0'; c++)
+            // Used to track the number of characters present in the alphabet from the input string
+            int count = 0;
+
+            // Iterate through dynamic alphabet array to check if the input string is a subset of the alphabet
+            int input_string_found = 0;
+
+            // Check if the input string is in the alphabet
+            input_string_found = pointerInArray(automaton->alphabet_list, input_string, automaton->alphabet_size);
+
+            // If the input string is not a string in the alphabet, we check if it is a subset of characters from the alphabet
+            if (!input_string_found)
             {
-                // Make sure each character in the input string is in the alphabet
-                if (!strchr(automaton->alphabet_list, *c))
+                for (int j = 0; j < automaton->alphabet_size; j++)
                 {
-                    printf("\nError: Transition %d (%s, %s, %s), input_string \"%s\" contains a character not in the alphabet.\n", i, from_state, input_string, to_state, input_string);
-                    return 0;
+                    // Check if the current alphabet string is a single character
+                    if (strlen(automaton->alphabet_list[j]) == 1)
+                    {
+                        // Check if the current character alphabet character exists in the input string, increment count if it is
+                        if (strchr(input_string, automaton->alphabet_list[j][0]))
+                        {
+                            count++;
+                        }
+                    }
                 }
+
+                // If the current character index is equal to the length of the input string, we know that the input string is a subset of the alphabet
+                if (count == strlen(input_string))
+                    input_string_found = 1;
+            }
+
+            // Print error if input string is not in the alphabet
+            if (!input_string_found)
+            {
+                printf("\nError: Transition %d (%s, %s, %s), input string \"%s\" is not in the alphabet.\n", i, from_state, input_string, to_state, input_string);
+                return 0;
             }
         }
 
@@ -493,6 +570,14 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 // Function to free dynamically allocated memory in the automaton struct
 void freeAutomaton(FiniteAutomaton *automaton)
 {
+
+    // Free alphabet
+    for (int i = 0; i < automaton->alphabet_size; i++)
+    {
+        if (automaton->alphabet_list[i] != NULL)
+            free(automaton->alphabet_list[i]);
+    }
+
     // Free states
     for (int i = 0; i < automaton->num_states; i++)
     {
@@ -516,4 +601,18 @@ void freeAutomaton(FiniteAutomaton *automaton)
     // Free transitions dynamic array
     if (automaton->transitions != NULL)
         free(automaton->transitions);
+}
+
+// Helper function to determine if pointer exist in array
+int pointerInArray(char **array, char *pointer, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (strcmp(array[i], pointer) == 0)
+        {
+            return 1;
+        }
+    }
+
+    return 0;
 }
