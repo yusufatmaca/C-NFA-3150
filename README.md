@@ -21,7 +21,7 @@ where example1 is the input file name.
 
 The input file has the following format.
 
-- <alphabet-size> <alphabet-list>
+- \<alphabet-size> \<alphabet-list>
 - <number-of-states> <state-list>
 - <starting-state>
 - <accept-state>
