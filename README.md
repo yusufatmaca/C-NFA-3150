@@ -2,13 +2,12 @@
 Nondeterministic Finite Automaton
 
 ## Final Grade: 90% 
-I submitted the project as a folder within a tar file and got 10% deducted for that, not very cool. Technically this is a 100%.
+I submitted the project as a folder within a tar file and got 10% deducted for that, not very cool. **Technically this is a 100%**.
 
 ## Assignment 1 - Implement an NFA 
 Due Friday, September 29, 2023
 
-Implement a nondeterministic finite automata that reads an input file which describes the NFA and outputs if it ends in an accept or reject state.
-
+Implement a nondeterministic finite automata that reads an input file that describes the NFA and outputs if it ends in an accept or reject state.
 
 ## 1. File Input
 Read the filename which describes the input NFA as a command line argument to
