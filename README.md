@@ -21,16 +21,16 @@ where example1 is the input file name.
 
 The input file has the following format.
 
-- \<alphabet-size> \<alphabet-list>
-- <number-of-states> <state-list>
-- <starting-state>
-- <accept-state>
-- <length-input-string> <input-string>
-- <number-of-transitions>
-- <transition-1>
-- <transition-2>
+- alphabet-size alphabet-list
+- number-of-states state-list
+- starting-state
+- accept-state
+- length-input-string input-string
+- number-of-transitions
+- transition-1
+- transition-2
 -   ...
-- <transition-n>
+- transition-n
 
 Example 1: A sample file for a simple NFA:
 - 2   0 1               -two strings in alphabet, the strings are 0 and 1
