@@ -1,7 +1,8 @@
 # CIS3150-A1
 Nondeterministic Finite Automaton
 
-## Final Grade: 90% (I submitted the project as a folder within a tar file and got 10% deducted for that, not very cool)
+## Final Grade: 90% 
+I submitted the project as a folder within a tar file and got 10% deducted for that, not very cool. Technically this is a 100%.
 
 ## Assignment 1 - Implement an NFA 
 Due Friday, September 29, 2023
