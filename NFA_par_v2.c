@@ -67,7 +67,6 @@ int main(int argc, char **argv)
     // Free all dynamically allocated memory in the automaton struct
     freeAutomaton(&automaton);
 
-
     double end_time = omp_get_wtime();
     printf("Execution time: %f seconds\n", end_time - start_time);
     return 0;
@@ -89,7 +88,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     automaton->transitions = NULL;
 
     // Read alphabet size
-    if (fscanf(input, "%d", &(automaton->alphabet_size)) != 1) return 0;
+    if (fscanf(input, "%d", &(automaton->alphabet_size)) != 1)
+        return 0;
     printf("Alphabet size: %d\n", automaton->alphabet_size);
 
     // Initialize alphabet list to NULL
@@ -102,7 +102,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("Alphabet: ");
     for (int i = 0; i < automaton->alphabet_size; i++)
     {
-        if (fscanf(input, "%s", str) != 1) return 0;
+        if (fscanf(input, "%s", str) != 1)
+            return 0;
 
         // Make sure alphabet string is 10 characters or less as per assignment requirements
         if (strlen(str) > 10)
@@ -124,7 +125,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("\n");
 
     // Read number of states
-    if (fscanf(input, "%d", &(automaton->num_states)) != 1) return 0;
+    if (fscanf(input, "%d", &(automaton->num_states)) != 1)
+        return 0;
     printf("Number of states: %d\n", automaton->num_states);
 
     // Initialize state list to NULL
@@ -137,7 +139,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("States: ");
     for (int i = 0; i < automaton->num_states; i++)
     {
-        if (fscanf(input, "%s", str) != 1) return 0;
+        if (fscanf(input, "%s", str) != 1)
+            return 0;
 
         // Make sure state name is 10 characters or less as per assignment requirements
         if (strlen(str) > 10)
@@ -156,7 +159,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("\n");
 
     // Read starting state
-    if (fscanf(input, "%s", str) != 1) return 0;
+    if (fscanf(input, "%s", str) != 1)
+        return 0;
     automaton->starting_state = strdup(str);
     printf("Starting state: %s\n", automaton->starting_state);
 
@@ -179,7 +183,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     }
 
     // Read accept state
-    if (fscanf(input, "%s", str) != 1) return 0;
+    if (fscanf(input, "%s", str) != 1)
+        return 0;
     automaton->accept_state = strdup(str);
     printf("Accept state: %s\n", automaton->accept_state);
 
@@ -202,7 +207,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     }
 
     // Read number of inputs
-    if (fscanf(input, "%d", &(automaton->num_inputs)) != 1) return 0;
+    if (fscanf(input, "%d", &(automaton->num_inputs)) != 1)
+        return 0;
     printf("Num inputs: %d\n", automaton->num_inputs);
 
     // Make sure number of inputs is less than or equal to MAX_INPUTS
@@ -222,7 +228,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("Inputs: ");
     for (int i = 0; i < automaton->num_inputs; i++)
     {
-        if (fscanf(input, "%s", str) != 1) return 0;
+        if (fscanf(input, "%s", str) != 1)
+            return 0;
 
         // Make sure input string is 10 characters or less as per assignment requirements
         if (strlen(str) > 10)
@@ -285,7 +292,8 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
     printf("\n");
 
     // Read number of transitions
-    if (fscanf(input, "%d", &(automaton->number_of_transitions)) != 1) return 0;
+    if (fscanf(input, "%d", &(automaton->number_of_transitions)) != 1)
+        return 0;
     printf("Number of transitions: %d\n", automaton->number_of_transitions);
 
     // Initialize transitions array structs
@@ -312,7 +320,7 @@ int parseAutomaton(FILE *input, FiniteAutomaton *automaton)
 
 // Parse transition from input format and fill the Transition struct in the FiniteAutomaton struct
 // This function is called from parseAutomaton()
-int parseTransitions(FILE* input, FiniteAutomaton* automaton)
+int parseTransitions(FILE *input, FiniteAutomaton *automaton)
 {
     // Read transitions
     printf("Transitions:\n");
@@ -377,7 +385,7 @@ int parseTransitions(FILE* input, FiniteAutomaton* automaton)
                 to_state_found = 1;
             }
         }
-        
+
         // Print error if to_state is not in the state list
         if (!to_state_found)
         {
@@ -437,6 +445,24 @@ int parseTransitions(FILE* input, FiniteAutomaton* automaton)
     return 1;
 }
 
+int getStateIndex(const FiniteAutomaton *automaton, const char *state)
+{
+    int found_index = -1;
+    #pragma omp parallel for shared(found_index)
+    for (int i = 0; i < automaton->num_states; i++)
+    {
+        if (strcmp(automaton->state_list[i], state) == 0)
+        {
+                if (found_index == -1)
+                { // Ensure only one thread sets the value
+                    found_index = i;
+                }
+            
+        }
+    }
+    return found_index;
+}
+
 // Function to traverse the input string and return 0 or 1 depending on whether there is a final accept state active
 int traverseAutomaton(FiniteAutomaton *automaton)
 {
@@ -444,6 +470,7 @@ int traverseAutomaton(FiniteAutomaton *automaton)
     int active_states[automaton->num_states];
     int next_active_states[automaton->num_states];
 
+    #pragma omp parallel for schedule(static) // chuck size = total iter / num threads
     // Initialize active states array and next active states array
     for (int i = 0; i < automaton->num_states; i++)
     {
@@ -451,19 +478,11 @@ int traverseAutomaton(FiniteAutomaton *automaton)
         next_active_states[i] = 0;
     }
 
-    // Set the starting state to active
-    for (int i = 0; i < automaton->num_states; i++)
+    int start_index = getStateIndex(automaton, automaton->starting_state);
+    if (start_index != -1)
     {
-        char *state = automaton->state_list[i];
-        if (strcmp(state, automaton->starting_state) == 0)
-        {
-            active_states[i] = 1;
-            
-            // If the starting state has an epsilon transition, we handle it here
-            // This exists to handle the sample input case 1. from Courselink
-            handleEpsilon(automaton, state, &active_states);
-            break;
-        }
+        active_states[start_index] = 1;
+        handleEpsilon(automaton, automaton->state_list[start_index], &active_states);
     }
 
     // Iterate through each input string
@@ -495,22 +514,25 @@ int traverseAutomaton(FiniteAutomaton *automaton)
         printf("\n");
     }
 
+    int found2 = 0;
+    #pragma omp parallel for shared(found2)
     // Check if the accept state is active, return 1 if it is
     for (int i = 0; i < automaton->num_states; i++)
     {
         if (strcmp(automaton->state_list[i], automaton->accept_state) == 0 && active_states[i] == 1)
         {
-            return 1;
+            found2 = 1;
         }
     }
 
     // Return 0 if the accept state is not active
-    return 0;
+    return found2;
 }
 
 // Function to determine array of next states
 void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_states)[automaton->num_states], int (*next_active_states)[automaton->num_states])
 {
+#pragma omp parallel for
     // Iterate through each transition to update the next_active_states array
     for (int i = 0; i < automaton->number_of_transitions; i++)
     {
@@ -554,6 +576,7 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 {
     int num_transitions = automaton->number_of_transitions;
 
+    #pragma omp parallel for
     // Iterate through all transitions to find epsilon transitions
     for (int i = 0; i < num_transitions; i++)
     {
@@ -562,7 +585,6 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
         // Check if the transition is an "e" epsilon transition, and check if the transition "from state" matches the passed "state" string
         if (strcmp(epsilon_transition->input_string, "e") == 0 && strcmp(epsilon_transition->from_state, state) == 0)
         {
-
             // Iterate through the state list to find the index of the next state
             for (int j = 0; j < automaton->num_states; j++)
             {

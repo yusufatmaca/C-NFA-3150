@@ -7,18 +7,19 @@ Due Date: September 29 2023
 */
 
 #include "NFA.h"
+#include "omp.h"
 
-// Main Program Loop
 int main(int argc, char **argv)
 {
+    double start_time = omp_get_wtime();
     // Ensure that all arguments are present
     if (argc < 2)
     {
-        printf("Usage: ./a1 NFA_FILENAME\n");
+        printf("Usage: ./a.out NFA_FILENAME\n");
         exit(-1);
     }
 
-    // Initialize a FiniteAutomaton struct
+    // Initialize a FiniteAutomaton
     FiniteAutomaton automaton;
 
     // Open the input file
@@ -65,6 +66,9 @@ int main(int argc, char **argv)
     // Free all dynamically allocated memory in the automaton struct
     freeAutomaton(&automaton);
 
+
+    double end_time = omp_get_wtime();
+        printf("Execution time: %f seconds\n", end_time - start_time);
     return 0;
 }
 
@@ -446,18 +450,34 @@ int traverseAutomaton(FiniteAutomaton *automaton)
         next_active_states[i] = 0;
     }
 
+    
     // Set the starting state to active
-    for (int i = 0; i < automaton->num_states; i++)
+    int found = 0;
+    #pragma omp parallel shared(found)
     {
-        char *state = automaton->state_list[i];
-        if (strcmp(state, automaton->starting_state) == 0)
+        #pragma omp for
+        for (int i = 0; i < automaton->num_states; i++)
         {
-            active_states[i] = 1;
-            
-            // If the starting state has an epsilon transition, we handle it here
-            // This exists to handle the sample input case 1. from Courselink
-            handleEpsilon(automaton, state, &active_states);
-            break;
+            // First check outside critical section (fast path)
+            if (!found)
+            {
+                char *state = automaton->state_list[i];
+                if (strcmp(state, automaton->starting_state) == 0)
+                {
+                    // Double-check inside critical section (safe path)
+                    #pragma omp critical
+                    {
+                        if (!found)
+                        {
+                            active_states[i] = 1;
+                            // If the starting state has an epsilon transition, we handle it here
+                            // This exists to handle the sample input case 1.
+                            handleEpsilon(automaton, state, &active_states);
+                            found = 1;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -473,6 +493,7 @@ int traverseAutomaton(FiniteAutomaton *automaton)
 
         determineNextStates(automaton, input, &active_states, &next_active_states);
 
+        #pragma omp parallel for
         // Copy the next_active_states array to the active_states array
         for (int i = 0; i < automaton->num_states; i++)
         {
@@ -490,57 +511,80 @@ int traverseAutomaton(FiniteAutomaton *automaton)
         printf("\n");
     }
 
-    // Check if the accept state is active, return 1 if it is
+    int found_accept = 0;
+    #pragma omp parallel for reduction(max:found_accept)
     for (int i = 0; i < automaton->num_states; i++)
     {
         if (strcmp(automaton->state_list[i], automaton->accept_state) == 0 && active_states[i] == 1)
         {
-            return 1;
+            found_accept = 1;
         }
     }
 
-    // Return 0 if the accept state is not active
-    return 0;
+    return found_accept;
+
 }
 
 // Function to determine array of next states
 void determineNextStates(FiniteAutomaton *automaton, char *input, int (*active_states)[automaton->num_states], int (*next_active_states)[automaton->num_states])
 {
-    // Iterate through each transition to update the next_active_states array
-    for (int i = 0; i < automaton->number_of_transitions; i++)
+    #pragma omp parallel
     {
-        Transition *transition = &(automaton->transitions[i]);
-
-        // Iterate through the active state list
-        for (int j = 0; j < automaton->num_states; j++)
+        // Create a thread-local array to store intermediate results
+        int (*local_next_states)[automaton->num_states] = malloc(sizeof(int[automaton->num_states]));
+        memset(*local_next_states, 0, automaton->num_states * sizeof(int));
+        
+        #pragma omp for
+        for (int i = 0; i < automaton->number_of_transitions; i++)
         {
-
-            // Make sure the current state is active, else we go to the next one
-            if ((*active_states)[j] == 1)
+            Transition *transition = &(automaton->transitions[i]);
+            for (int j = 0; j < automaton->num_states; j++)
             {
-
-                // Check if the current transition "from_state" matches the current state we are on, and check if the input string matches the required transition input string
-                if (strcmp(transition->from_state, automaton->state_list[j]) == 0 && strcmp(transition->input_string, input) == 0)
+                if ((*active_states)[j] == 1)
                 {
-
-                    // We have to iterate through the state name list again to find the index of the next state
-                    for (int k = 0; k < automaton->num_states; k++)
+                    if (strcmp(transition->from_state, automaton->state_list[j]) == 0 && 
+                        strcmp(transition->input_string, input) == 0)
                     {
-
-                        // Set the next state to active based on the string in the to_state field of the transition
-                        if (strcmp(transition->to_state, automaton->state_list[k]) == 0)
+                        for (int k = 0; k < automaton->num_states; k++)
                         {
-                            (*next_active_states)[k] = 1;
-
-                            char *state = automaton->state_list[k];
-
-                            // If the state we set to active has an epsilon transition, we handle it here
-                            handleEpsilon(automaton, state, next_active_states);
+                            if (strcmp(transition->to_state, automaton->state_list[k]) == 0)
+                            {
+                                (*local_next_states)[k] = 1;
+                                
+                                char *state = automaton->state_list[k];
+                                
+                                // Create temporary array with correct type
+                                int (*temp_states)[automaton->num_states] = malloc(sizeof(int[automaton->num_states]));
+                                memcpy(*temp_states, *local_next_states, automaton->num_states * sizeof(int));
+                                
+                                // Now passing the correct type to handleEpsilon
+                                handleEpsilon(automaton, state, temp_states);
+                                
+                                // Merge epsilon results
+                                for (int m = 0; m < automaton->num_states; m++) {
+                                    if ((*temp_states)[m] == 1) {
+                                        (*local_next_states)[m] = 1;
+                                    }
+                                }
+                                free(temp_states);
+                            }
                         }
                     }
                 }
             }
         }
+
+        // Merge thread-local results into shared next_active_states array
+        #pragma omp critical
+        {
+            for (int i = 0; i < automaton->num_states; i++) {
+                if ((*local_next_states)[i] == 1) {
+                    (*next_active_states)[i] = 1;
+                }
+            }
+        }
+
+        free(local_next_states);
     }
 }
 
@@ -549,21 +593,21 @@ void handleEpsilon(FiniteAutomaton *automaton, char *state, int (*next_active_st
 {
     int num_transitions = automaton->number_of_transitions;
 
-    // Iterate through all transitions to find epsilon transitions
+    #pragma omp parallel for default(none) \
+        shared(automaton, state, next_active_states, num_transitions) \
+        schedule(dynamic)
     for (int i = 0; i < num_transitions; i++)
     {
         Transition *epsilon_transition = &(automaton->transitions[i]);
 
-        // Check if the transition is an "e" epsilon transition, and check if the transition "from state" matches the passed "state" string
-        if (strcmp(epsilon_transition->input_string, "e") == 0 && strcmp(epsilon_transition->from_state, state) == 0)
+        if (strcmp(epsilon_transition->input_string, "e") == 0 && 
+            strcmp(epsilon_transition->from_state, state) == 0)
         {
-
-            // Iterate through the state list to find the index of the next state
             for (int j = 0; j < automaton->num_states; j++)
             {
                 if (strcmp(epsilon_transition->to_state, automaton->state_list[j]) == 0)
                 {
-                    // Set the next state to active if the current state has an epsilon transition
+                    #pragma omp atomic write
                     (*next_active_states)[j] = 1;
                 }
             }
