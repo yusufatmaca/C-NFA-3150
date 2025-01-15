@@ -1,1141 +1,0 @@
-Running for 2 threads...
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r000hs -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 4.291109 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r000hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-68954-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-68954-s218.sc' file    amplxe: Executing actions 12 % Loading '68965.stat.perf' file                  amplxe: Executing actions 12 % Loading '68954-68965.0.trace' file              amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving thread name information               amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 24 % Resolving call target names for dynamic code    amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Setting data model parameters                   amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 31 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 36 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Discarding redundant overtime data              amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 39 % Saving the result                               amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 4.391s
-    CPU Time: 8.260s
-        Effective Time: 7.990s
-            Idle: 0s
-            Poor: 7.990s
-            Ok: 0s
-            Ideal: 0s
-            Over: 0s
-        Spin Time: 0.270s
-            Imbalance or Serial Spinning: 0.270s
-            Lock Contention: 0s
-            Other: 0s
-        Overhead Time: 0s
-            Creation: 0s
-            Scheduling: 0s
-            Reduction: 0s
-            Atomics: 0s
-            Other: 0s
-    Total Thread Count: 2
-    Paused Time: 0s
-
-Top Hotspots
-Function                       Module        CPU Time
------------------------------  ------------  --------
-__strcmp_sse42                 libc.so.6       5.240s
-handleEpsilon._omp_fn.0        NFA_par_v2      2.480s
-gomp_team_barrier_wait_end     libgomp.so.1    0.210s
-determineNextStates._omp_fn.0  NFA_par_v2      0.120s
-[Import thunk strcmp]          NFA_par_v2      0.110s
-[Others]                       N/A             0.100s
-Effective CPU Utilization: 4.7%
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Average Effective CPU Utilization: 1.896 out of 40
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:25:23 03/01/2025 UTC
-    Collection stop time: 01:25:27 03/01/2025 UTC
-    Collector Type: Driverless Perf per-process counting,User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r000hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r001tr -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 4.279701 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r001tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-69114-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-69114-s218.sc' file    amplxe: Executing actions 12 % Loading '69114-69119.0.trace' file              amplxe: Executing actions 12 % Converting API Events to Waits                  amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 25 % Resolving thread name information               amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Setting data model parameters                   amplxe: Executing actions 32 % Setting data model parameters                   amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 35 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 38 % Precomputing frequently used data               amplxe: Executing actions 38 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 41 % Discarding redundant overtime data              amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 44 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 4.281s
-    Paused Time: 0s
-Effective CPU Utilization: 4.6% (1.857 out of 40 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 2
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                 Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        --------------------------  -----------------------------------  ----------------------------  ----------
-        Stream example7 0x73d8e09e                               0.000s                        100.0%           1
-    Spin and Overhead Time: 0.260s (3.2% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function                    Module        Spin and Overhead Time  (% from CPU Time)(%)
-        --------------------------  ------------  ----------------------  --------------------
-        gomp_team_barrier_wait_end  libgomp.so.1                  0.190s                  2.3%
-        gomp_team_end               libgomp.so.1                  0.070s                  0.9%
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:25:34 03/01/2025 UTC
-    Collection stop time: 01:25:38 03/01/2025 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r001tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r001tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Results saved in output_threads_2/
-Running for 4 threads...
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r002hs -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 2.340380 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r002hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-69310-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-69310-s218.sc' file    amplxe: Executing actions 12 % Loading '69321.stat.perf' file                  amplxe: Executing actions 12 % Loading '69310-69321.0.trace' file              amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for dangling locations    amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 20 % Resolving information for `libpthread.so.0'     amplxe: Executing actions 20 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libgomp.so.1'        
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving thread name information               amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 24 % Resolving call target names for dynamic code    amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Setting data model parameters                   amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 31 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 36 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Discarding redundant overtime data              amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 39 % Saving the result                               amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 2.444s
-    CPU Time: 8.870s
-        Effective Time: 8.220s
-            Idle: 0s
-            Poor: 8.220s
-            Ok: 0s
-            Ideal: 0s
-            Over: 0s
-        Spin Time: 0.650s
-            Imbalance or Serial Spinning: 0.650s
-            Lock Contention: 0s
-            Other: 0s
-        Overhead Time: 0s
-            Creation: 0s
-            Scheduling: 0s
-            Reduction: 0s
-            Atomics: 0s
-            Other: 0s
-    Total Thread Count: 4
-    Paused Time: 0s
-
-Top Hotspots
-Function                    Module        CPU Time
---------------------------  ------------  --------
-__strcmp_sse42              libc.so.6       5.189s
-handleEpsilon._omp_fn.0     NFA_par_v2      2.751s
-gomp_team_barrier_wait_end  libgomp.so.1    0.560s
-[Import thunk strcmp]       NFA_par_v2      0.150s
-gomp_team_end               libgomp.so.1    0.110s
-[Others]                    N/A             0.110s
-Effective CPU Utilization: 9.2%
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Average Effective CPU Utilization: 3.664 out of 40
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:25:46 03/01/2025 UTC
-    Collection stop time: 01:25:49 03/01/2025 UTC
-    Collector Type: Driverless Perf per-process counting,User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r002hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r003tr -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 2.298678 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r003tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-69471-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-69471-s218.sc' file    amplxe: Executing actions 12 % Loading '69471-69476.0.trace' file              amplxe: Executing actions 12 % Converting API Events to Waits                  amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 25 % Resolving thread name information               amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Setting data model parameters                   amplxe: Executing actions 32 % Setting data model parameters                   amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 35 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 38 % Precomputing frequently used data               amplxe: Executing actions 38 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 41 % Discarding redundant overtime data              amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 44 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 2.300s
-    Paused Time: 0s
-Effective CPU Utilization: 8.8% (3.530 out of 40 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 4
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                 Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        --------------------------  -----------------------------------  ----------------------------  ----------
-        Stream example7 0x73d8e09e                               0.000s                        100.0%           1
-    Spin and Overhead Time: 0.620s (7.1% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function                    Module        Spin and Overhead Time  (% from CPU Time)(%)
-        --------------------------  ------------  ----------------------  --------------------
-        gomp_team_barrier_wait_end  libgomp.so.1                  0.500s                  5.7%
-        gomp_team_end               libgomp.so.1                  0.120s                  1.4%
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:25:55 03/01/2025 UTC
-    Collection stop time: 01:25:58 03/01/2025 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r003tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r003tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Results saved in output_threads_4/
-Running for 8 threads...
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r004hs -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 1.324417 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r004hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-69667-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-69667-s218.sc' file    amplxe: Executing actions 12 % Loading '69677.stat.perf' file                  amplxe: Executing actions 12 % Loading '69667-69677.0.trace' file              amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 21 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving thread name information               amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 24 % Resolving call target names for dynamic code    amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Setting data model parameters                   amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 31 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 36 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Discarding redundant overtime data              amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 39 % Saving the result                               amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 1.428s
-    CPU Time: 9.960s
-        Effective Time: 8.540s
-            Idle: 0s
-            Poor: 8.540s
-            Ok: 0s
-            Ideal: 0s
-            Over: 0s
-        Spin Time: 1.420s
-         | A significant portion of CPU time is spent waiting. Use this metric
-         | to discover which synchronizations are spinning. Consider adjusting
-         | spin wait parameters, changing the lock implementation (for example,
-         | by backing off then descheduling), or adjusting the synchronization
-         | granularity.
-         |
-            Imbalance or Serial Spinning: 1.420s
-             | The threading runtime function related to time spent on imbalance
-             | or serial spinning consumed a significant amount of CPU time.
-             | This can be caused by a load imbalance, insufficient concurrency
-             | for all working threads, or busy waits of worker threads while
-             | serial code is executed. If there is an imbalance, apply dynamic
-             | work scheduling or reduce the size of work chunks or tasks. If
-             | there is insufficient concurrency, consider collapsing the outer
-             | and inner loops. If there is a wait for completion of serial
-             | code, explore options for parallelization with Intel Advisor,
-             | algorithm, or microarchitecture tuning of the application's
-             | serial code with VTune Amplifier Basic Hotspots or
-             | Microarchitecture Exploration analysis respectively. For OpenMP*
-             | applications, use the Per-Barrier OpenMP Potential Gain metric
-             | set in the HPC Performance Characterization analysis to discover
-             | the reason for high imbalance or serial spin time.
-             |
-            Lock Contention: 0s
-            Other: 0s
-        Overhead Time: 0s
-            Creation: 0s
-            Scheduling: 0s
-            Reduction: 0s
-            Atomics: 0s
-            Other: 0s
-    Total Thread Count: 8
-    Paused Time: 0s
-
-Top Hotspots
-Function                       Module        CPU Time
------------------------------  ------------  --------
-__strcmp_sse42                 libc.so.6       5.330s
-handleEpsilon._omp_fn.0        NFA_par_v2      2.900s
-gomp_team_barrier_wait_end     libgomp.so.1    1.310s
-determineNextStates._omp_fn.0  NFA_par_v2      0.160s
-[Import thunk strcmp]          NFA_par_v2      0.130s
-[Others]                       N/A             0.130s
-Effective CPU Utilization: 17.6%
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Average Effective CPU Utilization: 7.057 out of 40
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:06 03/01/2025 UTC
-    Collection stop time: 01:26:07 03/01/2025 UTC
-    Collector Type: Driverless Perf per-process counting,User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r004hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r005tr -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 1.356872 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r005tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-69833-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-69833-s218.sc' file    amplxe: Executing actions 12 % Loading '69833-69838.0.trace' file              amplxe: Executing actions 12 % Converting API Events to Waits                  amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 25 % Resolving thread name information               amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Setting data model parameters                   amplxe: Executing actions 32 % Setting data model parameters                   amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 35 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 38 % Precomputing frequently used data               amplxe: Executing actions 38 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 41 % Discarding redundant overtime data              amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 44 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 1.360s
-    Paused Time: 0s
-Effective CPU Utilization: 15.9% (6.348 out of 40 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 8
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                 Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        --------------------------  -----------------------------------  ----------------------------  ----------
-        Stream example7 0x73d8e09e                               0.000s                        100.0%           1
-    Spin and Overhead Time: 1.530s (15.1% of CPU Time)
-     | The threading runtime function related to time spent on imbalance or
-     | serial spinning consumed a significant amount of CPU time. This can be
-     | caused by a load imbalance, insufficient concurrency for all working
-     | threads, or busy waits of worker threads while serial code is executed.
-     | If there is an imbalance, apply dynamic work scheduling or reduce the
-     | size of work chunks or tasks. If there is insufficient concurrency,
-     | consider collapsing the outer and inner loops. If there is a wait for
-     | completion of serial code, explore options for parallelization with Intel
-     | Advisor, algorithm, or microarchitecture tuning of the application's
-     | serial code with VTune Amplifier Basic Hotspots or Microarchitecture
-     | Exploration analysis respectively. For OpenMP* applications, use the Per-
-     | Barrier OpenMP Potential Gain metric set in the HPC Performance
-     | Characterization analysis to discover the reason for high imbalance or
-     | serial spin time.
-     |
-
-        Top Functions with Spin or Overhead Time
-        Function                    Module        Spin and Overhead Time  (% from CPU Time)(%)
-        --------------------------  ------------  ----------------------  --------------------
-        gomp_team_barrier_wait_end  libgomp.so.1                  1.420s                 14.0%
-        gomp_team_end               libgomp.so.1                  0.100s                  1.0%
-        gomp_init_task              libgomp.so.1                  0.010s                  0.1%
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:14 03/01/2025 UTC
-    Collection stop time: 01:26:16 03/01/2025 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r005tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r005tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Results saved in output_threads_8/
-Running for 16 threads...
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r006hs -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 0.854517 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r006hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-70035-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-70035-s218.sc' file    amplxe: Executing actions 12 % Loading '70045.stat.perf' file                  amplxe: Executing actions 12 % Loading '70035-70045.0.trace' file              amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for dangling locations    amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 21 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving thread name information               amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 24 % Resolving call target names for dynamic code    amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Setting data model parameters                   amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 31 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 36 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Discarding redundant overtime data              amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 39 % Saving the result                               amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 0.963s
-    CPU Time: 12.880s
-        Effective Time: 10.271s
-            Idle: 0s
-            Poor: 10.271s
-            Ok: 0s
-            Ideal: 0s
-            Over: 0s
-        Spin Time: 2.609s
-         | A significant portion of CPU time is spent waiting. Use this metric
-         | to discover which synchronizations are spinning. Consider adjusting
-         | spin wait parameters, changing the lock implementation (for example,
-         | by backing off then descheduling), or adjusting the synchronization
-         | granularity.
-         |
-            Imbalance or Serial Spinning: 2.609s
-             | The threading runtime function related to time spent on imbalance
-             | or serial spinning consumed a significant amount of CPU time.
-             | This can be caused by a load imbalance, insufficient concurrency
-             | for all working threads, or busy waits of worker threads while
-             | serial code is executed. If there is an imbalance, apply dynamic
-             | work scheduling or reduce the size of work chunks or tasks. If
-             | there is insufficient concurrency, consider collapsing the outer
-             | and inner loops. If there is a wait for completion of serial
-             | code, explore options for parallelization with Intel Advisor,
-             | algorithm, or microarchitecture tuning of the application's
-             | serial code with VTune Amplifier Basic Hotspots or
-             | Microarchitecture Exploration analysis respectively. For OpenMP*
-             | applications, use the Per-Barrier OpenMP Potential Gain metric
-             | set in the HPC Performance Characterization analysis to discover
-             | the reason for high imbalance or serial spin time.
-             |
-            Lock Contention: 0s
-            Other: 0s
-        Overhead Time: 0s
-            Creation: 0s
-            Scheduling: 0s
-            Reduction: 0s
-            Atomics: 0s
-            Other: 0s
-    Total Thread Count: 16
-    Paused Time: 0s
-
-Top Hotspots
-Function                       Module        CPU Time
------------------------------  ------------  --------
-__strcmp_sse42                 libc.so.6       5.310s
-handleEpsilon._omp_fn.0        NFA_par_v2      4.420s
-gomp_team_barrier_wait_end     libgomp.so.1    2.449s
-determineNextStates._omp_fn.0  NFA_par_v2      0.450s
-gomp_team_end                  libgomp.so.1    0.140s
-[Others]                       N/A             0.110s
-Effective CPU Utilization: 34.0%
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Average Effective CPU Utilization: 13.596 out of 40
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:24 03/01/2025 UTC
-    Collection stop time: 01:26:25 03/01/2025 UTC
-    Collector Type: Driverless Perf per-process counting,User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r006hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r007tr -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 0.781808 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r007tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-70208-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-70208-s218.sc' file    amplxe: Executing actions 12 % Loading '70208-70213.0.trace' file              amplxe: Executing actions 12 % Converting API Events to Waits                  amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 20 % Resolving information for `libgomp.so.1'        
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 21 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 22 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 25 % Resolving thread name information               amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Setting data model parameters                   amplxe: Executing actions 32 % Setting data model parameters                   amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 35 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 38 % Precomputing frequently used data               amplxe: Executing actions 38 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 41 % Discarding redundant overtime data              amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 44 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 0.786s
-    Paused Time: 0s
-Effective CPU Utilization: 29.5% (11.782 out of 40 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 16
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                 Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        --------------------------  -----------------------------------  ----------------------------  ----------
-        Stream example7 0x73d8e09e                               0.000s                        100.0%           1
-    Spin and Overhead Time: 2.490s (21.2% of CPU Time)
-     | The threading runtime function related to time spent on imbalance or
-     | serial spinning consumed a significant amount of CPU time. This can be
-     | caused by a load imbalance, insufficient concurrency for all working
-     | threads, or busy waits of worker threads while serial code is executed.
-     | If there is an imbalance, apply dynamic work scheduling or reduce the
-     | size of work chunks or tasks. If there is insufficient concurrency,
-     | consider collapsing the outer and inner loops. If there is a wait for
-     | completion of serial code, explore options for parallelization with Intel
-     | Advisor, algorithm, or microarchitecture tuning of the application's
-     | serial code with VTune Amplifier Basic Hotspots or Microarchitecture
-     | Exploration analysis respectively. For OpenMP* applications, use the Per-
-     | Barrier OpenMP Potential Gain metric set in the HPC Performance
-     | Characterization analysis to discover the reason for high imbalance or
-     | serial spin time.
-     |
-
-        Top Functions with Spin or Overhead Time
-        Function                    Module           Spin and Overhead Time  (% from CPU Time)(%)
-        --------------------------  ---------------  ----------------------  --------------------
-        gomp_team_barrier_wait_end  libgomp.so.1                     2.230s                 19.0%
-        gomp_team_end               libgomp.so.1                     0.130s                  1.1%
-        gomp_barrier_wait_end       libgomp.so.1                     0.120s                  1.0%
-        pthread_create              libpthread.so.0                  0.010s                  0.1%
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:32 03/01/2025 UTC
-    Collection stop time: 01:26:33 03/01/2025 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r007tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r007tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Results saved in output_threads_16/
-Running for 32 threads...
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r008hs -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 0.580427 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r008hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-70417-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-70417-s218.sc' file    amplxe: Executing actions 12 % Loading '70428.stat.perf' file                  amplxe: Executing actions 12 % Loading '70417-70428.0.trace' file              amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     amplxe: Executing actions 19 % Resolving information for `ld-linux-x86-64.so.2'amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Warning: Cannot locate debugging information for file `/lib64/ld-linux-x86-64.so.2'.
-amplxe: Executing actions 19 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Executing actions 20 % Resolving information for `libc.so.6'           amplxe: Executing actions 21 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving information for `libtpsstool.so'      
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving thread name information               amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 24 % Resolving call target names for dynamic code    amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Setting data model parameters                   amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 30 % Precomputing frequently used data               amplxe: Executing actions 31 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 34 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 36 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Updating precomputed scalar metrics             amplxe: Executing actions 37 % Discarding redundant overtime data              amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 39 % Saving the result                               amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 49 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 0.694s
-    CPU Time: 17.130s
-        Effective Time: 12.721s
-            Idle: 0s
-            Poor: 10.110s
-            Ok: 2.610s
-            Ideal: 0s
-            Over: 0s
-        Spin Time: 4.398s
-         | A significant portion of CPU time is spent waiting. Use this metric
-         | to discover which synchronizations are spinning. Consider adjusting
-         | spin wait parameters, changing the lock implementation (for example,
-         | by backing off then descheduling), or adjusting the synchronization
-         | granularity.
-         |
-            Imbalance or Serial Spinning: 4.398s
-             | The threading runtime function related to time spent on imbalance
-             | or serial spinning consumed a significant amount of CPU time.
-             | This can be caused by a load imbalance, insufficient concurrency
-             | for all working threads, or busy waits of worker threads while
-             | serial code is executed. If there is an imbalance, apply dynamic
-             | work scheduling or reduce the size of work chunks or tasks. If
-             | there is insufficient concurrency, consider collapsing the outer
-             | and inner loops. If there is a wait for completion of serial
-             | code, explore options for parallelization with Intel Advisor,
-             | algorithm, or microarchitecture tuning of the application's
-             | serial code with VTune Amplifier Basic Hotspots or
-             | Microarchitecture Exploration analysis respectively. For OpenMP*
-             | applications, use the Per-Barrier OpenMP Potential Gain metric
-             | set in the HPC Performance Characterization analysis to discover
-             | the reason for high imbalance or serial spin time.
-             |
-            Lock Contention: 0s
-            Other: 0s
-        Overhead Time: 0.011s
-            Creation: 0.011s
-            Scheduling: 0s
-            Reduction: 0s
-            Atomics: 0s
-            Other: 0s
-    Total Thread Count: 32
-    Paused Time: 0s
-
-Top Hotspots
-Function                       Module        CPU Time
------------------------------  ------------  --------
-__strcmp_sse42                 libc.so.6       5.961s
-handleEpsilon._omp_fn.0        NFA_par_v2      5.400s
-gomp_team_barrier_wait_end     libgomp.so.1    3.819s
-determineNextStates._omp_fn.0  NFA_par_v2      1.250s
-gomp_barrier_wait_end          libgomp.so.1    0.441s
-[Others]                       N/A             0.260s
-Effective CPU Utilization: 63.4%
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Average Effective CPU Utilization: 25.367 out of 40
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:41 03/01/2025 UTC
-    Collection stop time: 01:26:42 03/01/2025 UTC
-    Collector Type: Driverless Perf per-process counting,User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r008hs'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: amplxe-cl -r /okyanus/users/yatmaca/C-NFA-3150/r009tr -command stop.
-Alphabet size: 26
-Alphabet: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of states: 27
-States: s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18 s19 s20 s21 s22 s23 s24 s25 s26 s27 
-Starting state: s1
-Accept state: s27
-Num inputs: 26
-Inputs: a b c d E f g h i j k l m n o p q r s t u v w x y z 
-Number of transitions: 36843
-Transitions:
-
-a  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-b  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-c  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-d  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-E  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-f  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-g  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-h  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-i  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-j  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-k  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-l  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-m  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-n  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-o  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-p  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-q  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-r  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-s  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-t  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-u  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-v  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-w  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-x  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-y  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-z  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-accept
-Execution time: 0.514908 seconds
-amplxe: Collection stopped.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r009tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions  0 % Finalizing the result                           amplxe: Executing actions  0 % Clearing the database                           amplxe: Executing actions  7 % Clearing the database                           amplxe: Executing actions  7 % Loading raw data to the database                amplxe: Executing actions  7 % Loading 'systemcollector-70605-s218.sc' file    amplxe: Executing actions 12 % Loading 'systemcollector-70605-s218.sc' file    amplxe: Executing actions 12 % Loading '70605-70612.0.trace' file              amplxe: Executing actions 12 % Converting API Events to Waits                  amplxe: Executing actions 12 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Updating precomputed scalar metrics             amplxe: Executing actions 14 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Processing profile metrics and debug informationamplxe: Executing actions 19 % Setting data model parameters                   amplxe: Executing actions 19 % Resolving module symbols                        amplxe: Executing actions 19 % Resolving information for `NFA_par_v2'          amplxe: Executing actions 19 % Resolving information for `libpthread.so.0'     
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-amplxe: Executing actions 19 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 20 % Resolving information for `libgomp.so.1'        amplxe: Executing actions 20 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libtpsstool.so'      amplxe: Executing actions 21 % Resolving information for `libc.so.6'           
-amplxe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-amplxe: Warning: Cannot locate debugging information for file `/okyanus/progs/intel_parallel_studio/intel2019update4/vtune_amplifier_2019.4.0.597835/lib64/libtpsstool.so'.
-amplxe: Executing actions 22 % Resolving information for `libc.so.6'           amplxe: Executing actions 22 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving bottom user stack information         amplxe: Executing actions 23 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving sync object name information          amplxe: Executing actions 24 % Resolving thread name information               amplxe: Executing actions 25 % Resolving thread name information               amplxe: Executing actions 25 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Resolving call target names for dynamic code    amplxe: Executing actions 26 % Processing profile metrics and debug informationamplxe: Executing actions 28 % Processing profile metrics and debug informationamplxe: Executing actions 29 % Processing profile metrics and debug informationamplxe: Executing actions 30 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Processing profile metrics and debug informationamplxe: Executing actions 31 % Setting data model parameters                   amplxe: Executing actions 32 % Setting data model parameters                   amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 32 % Precomputing frequently used data               amplxe: Executing actions 33 % Precomputing frequently used data               amplxe: Executing actions 35 % Precomputing frequently used data               amplxe: Executing actions 36 % Precomputing frequently used data               amplxe: Executing actions 38 % Precomputing frequently used data               amplxe: Executing actions 38 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Updating precomputed scalar metrics             amplxe: Executing actions 39 % Discarding redundant overtime data              amplxe: Executing actions 41 % Discarding redundant overtime data              amplxe: Executing actions 41 % Saving the result                               amplxe: Executing actions 42 % Saving the result                               amplxe: Executing actions 44 % Saving the result                               amplxe: Executing actions 50 % Saving the result                               amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Elapsed Time: 0.523s
-    Paused Time: 0s
-Effective CPU Utilization: 50.6% (20.252 out of 40 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 32
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                 Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        --------------------------  -----------------------------------  ----------------------------  ----------
-        Stream example7 0x73d8e09e                               0.000s                        100.0%           1
-    Spin and Overhead Time: 4.428s (29.5% of CPU Time)
-     | The threading runtime function related to time spent on imbalance or
-     | serial spinning consumed a significant amount of CPU time. This can be
-     | caused by a load imbalance, insufficient concurrency for all working
-     | threads, or busy waits of worker threads while serial code is executed.
-     | If there is an imbalance, apply dynamic work scheduling or reduce the
-     | size of work chunks or tasks. If there is insufficient concurrency,
-     | consider collapsing the outer and inner loops. If there is a wait for
-     | completion of serial code, explore options for parallelization with Intel
-     | Advisor, algorithm, or microarchitecture tuning of the application's
-     | serial code with VTune Amplifier Basic Hotspots or Microarchitecture
-     | Exploration analysis respectively. For OpenMP* applications, use the Per-
-     | Barrier OpenMP Potential Gain metric set in the HPC Performance
-     | Characterization analysis to discover the reason for high imbalance or
-     | serial spin time.
-     |
-
-        Top Functions with Spin or Overhead Time
-        Function                    Module        Spin and Overhead Time  (% from CPU Time)(%)
-        --------------------------  ------------  ----------------------  --------------------
-        gomp_team_barrier_wait_end  libgomp.so.1                  3.928s                 26.2%
-        gomp_barrier_wait_end       libgomp.so.1                  0.350s                  2.3%
-        gomp_team_end               libgomp.so.1                  0.150s                  1.0%
-Collection and Platform Info
-    Application Command Line: ./NFA_par_v2 "example7" 
-    Operating System: 3.10.0-514.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
-    Computer Name: s218
-    Result Size: 3 MB 
-    Collection start time: 01:26:49 03/01/2025 UTC
-    Collection stop time: 01:26:49 03/01/2025 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Skylake
-        Frequency: 2.394 GHz 
-        Logical CPU Count: 40
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: amplxe-cl -report summary -report-knob show-issues=false -r
-<my_result_dir>. Alternatively, you may view the report in the csv format:
-amplxe-cl -report <report_name> -format=csv.
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r009tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-amplxe: Using result path `/okyanus/users/yatmaca/C-NFA-3150/r009tr'
-amplxe: Executing actions  0 %                                                 amplxe: Executing actions  0 % Finalizing results                              amplxe: Executing actions 50 % Finalizing results                              amplxe: Executing actions 50 % Generating a report                             amplxe: Executing actions 50 % Setting data model parameters                   amplxe: Executing actions 75 % Setting data model parameters                   amplxe: Executing actions 75 % Generating a report                             amplxe: Executing actions 100 % Generating a report                            amplxe: Executing actions 100 % done                                           
-Results saved in output_threads_32/
