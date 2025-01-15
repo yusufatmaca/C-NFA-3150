@@ -1,0 +1,205 @@
+chmod: cannot access ‘NFA_par’: No such file or directory
+Running for 1 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_1/
+Running for 2 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_2/
+Running for 4 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_4/
+Running for 8 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_8/
+Running for 16 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_16/
+Running for 32 threads...
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Warning: The "stackStitching" knob is not applicable to this analysis type.
+amplxe: Error: Cannot find application file "./NFA_par".
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+amplxe: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	hotspots
+	memory-consumption
+	advanced-hotspots
+	uarch-exploration
+	general-exploration
+	memory-access
+	concurrency
+	locksandwaits
+	threading
+	hpc-performance
+	platform-profiler
+	system-overview
+	cpugpu-concurrency
+	gpu-hotspots
+	gpu-profiling
+	graphics-rendering
+	io
+	fpga-interaction
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
+amplxe: Error: Result path `/okyanus/users/yatmaca/C-NFA-3150/r@@@{at}' does not exist.
+Results saved in output_threads_32/
