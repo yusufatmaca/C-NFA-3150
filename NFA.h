@@ -1,11 +1,3 @@
-/*
-Name: Kyle Lukaszek
-Student ID: 1113798
-Class: CIS*3150
-Assignment 1
-Due Date: September 29 2023
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,25 +7,24 @@ Due Date: September 29 2023
 #define MAX_INPUTS         100   // Maximum number of input strings
 #define MAX_STRING_LEN     11    // Maximum state name length + 1 for null-terminator
 
-// Define a struct for a single transition
 typedef struct {
     char from_state[MAX_STRING_LEN];
     char input_string[MAX_STRING_LEN];
     char to_state[MAX_STRING_LEN];
 } Transition;
 
-// Define a struct to represent the finite automaton
+// A NFA is a 5-tuple (Σ, Q, q0, F, δ)
 typedef struct {
     int alphabet_size;
-    char* alphabet_list[MAX_ALPHABET_SIZE];
+    char* alphabet_list[MAX_ALPHABET_SIZE]; // Σ
     int num_states;
-    char* state_list[MAX_STATES];
-    char* starting_state;
-    char* accept_state;
+    char* state_list[MAX_STATES];           // Q
+    char* starting_state;                   // q0
+    char* accept_state;                     // F ⊆ Q
     int num_inputs;
-    char* input_strings[MAX_INPUTS]; // Up to 100 input strings
+    char* input_strings[MAX_INPUTS];
     int number_of_transitions;
-    Transition* transitions; // Dynamic array of transitions
+    Transition* transitions;                // δ
 } FiniteAutomaton;
 
 // Function to parse the input format and fill the FiniteAutomaton struct
